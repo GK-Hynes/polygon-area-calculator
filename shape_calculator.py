@@ -31,9 +31,7 @@ class Rectangle:
         if shape.width > self.width or shape.height > self.height:
             return 0
         else:
-            pass
-
-
+            return self.get_area() // shape.get_area()
 
 class Square(Rectangle):
     def __init__(self, side):
